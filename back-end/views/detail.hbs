@@ -1,0 +1,136 @@
+ <div class="header-detail">
+        <nav>
+
+            <p class="logo">Book Store</p>
+            <ul>
+            <li><a href="/products">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="./cart.html">Giỏ Hàng</a></li>
+                <!-- <li><a href="/admin.html">Liên Hệ</a></li> -->
+                <li><a href="/login.html">Tài Khoản</a></li>
+            </ul>
+            <!-- <button class="btn">Sign Up</button> -->
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row-content" id="showDetail">
+            <div class="row-left">
+                <img src="/images/{{sp.image}}" alt=""><br>
+            </div>
+            <div class="row-right">
+                <h3>{{sp.name}}</h3>
+                <div class="price">
+                    <del style=" color: #ddd; font-size: 25px;">{{sp.price_1}}</del>
+                    <span style="margin-right: 20px; font-size: 30px; color: rgb(178, 62, 62);">{{sp.price_2}}</span>
+                </div>
+                <p style="margin-top: 30px;">{{sp.mota_1}}</p>
+
+                <div class="quantity">
+                    <input class="number" type="number" name="" id="" min="1" max="100" value="1">
+                </div>
+                <button type="submit" class="btn">Thêm vào giỏ </button>
+                <p style="margin-top: 20px;">{{sp.mota_2}}</p>
+            </div>
+        </div>
+    </div>
+{{!-- <div class="content-3">
+        <h3>Sản phẩm liên quan</h3><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="bestseller">
+            {{#each sanPhamLienQuan}}
+               <a style="text-decoration: none;" href="/products/detail/{{this.id}}">
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style ="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+
+            {{!-- <div class="box1 mr1">
+                <img src="/images/muonkiepnhansinh2.jpg" alt="">
+                <h4>Muôn kiếp nhân sinh 2</h4>
+                <p><del>200</del></p>
+                <h5>$8.50</h5>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div> --}}
+            {{!-- <div class="box1 mr1">
+                <img src="/images/muonkiepnhansinh3.jpg" alt="">
+                <h4>Muôn kiếp nhân sinh 3</h4>
+                <p><del>200</del></p>
+                <h5>$8.50</h5>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div>
+            <div class="box1 mr1">
+                <a href="./pages/detail.html"><img src="/images/damtreodaiduongden.png" alt="">
+                    <h4>Đám trẻ ở đại dương đen</h4>
+                    <p><del>200</del></p>
+                    <h5>$8.50</h5>
+                </a>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div> --}}
+
+        </div>
+    </div> --}}
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Book Store</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                </p>
+            </div>
+            <div class="col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Features</a></li>
+
+                    <li><a href="">News & Blogs</a></li>
+                    <li><a href="">Help & Supports</a></li>
+
+
+                </ul>
+            </div>
+            <!-- 
+            <div class="col"><h3>Company</h3>
+                <ul>
+                    <li><a href="">How we work</a></li>
+                    <li><a href="">Terms of service</a></li>
+
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">FAQ</a></li>
+
+
+                </ul></div>  -->
+            <div class="col">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li><a href="">QTSC, Tân Chánh Hiệp,<br> Quận 12, TPHCM</a></li>
+                    <li><a href="">+1 202-918-2132</a></li>
+
+                    <li><a href="">thivcps28621@mail.com</a></li>
+                    <li><a href="">www..com</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Nhận thông báo</h3>
+                <form>
+                    <box-icon name='envelope'></box-icon>
+                    <input type="email" placeholder="Enter email" required>
+
+                    <button type="submit"><box-icon name='right-arrow-alt'></box-icon></button>
+                </form>
+                <div class="social-icon">
+                    <box-icon class="fab" name='facebook' type='logo'></box-icon>
+                    <box-icon class="fab" name='twitter' type='logo'></box-icon>
+                    <box-icon class="fab" name='instagram' type='logo'></box-icon>
+                </div>
+            </div>
+
+        </div>
+    </footer>
